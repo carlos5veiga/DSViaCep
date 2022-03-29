@@ -29,42 +29,44 @@
                     <div class="form-control">
                         <label for="cep">CEP:</label>
                         <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP">
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="cep">Campo requerido</div>
                     </div>
                     <div class="form-control">
-                        <label for=" street ">Logradouro:</label>
+                        <label for="street">Logradouro:</label>
                         <input name="street " id="street" class="form-input" type="text " placeholder="Logradouro " disabled>
                     </div>
                     <div class="form-control">
                         <label for="number">Número:</label>
                         <input name="number" id="number" class="form-input" type="text" placeholder="Número">
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="number">Campo requerido</div>
                     </div>
                     <div class="form-control">
-                        <label for=" cidade ">Cidade:</label>
-                        <input name="cidade " id="cidade" class="form-input" type="text" placeholder="Cidade" disabled>
+                        <label for="city">Cidade:</label>
+                        <input name="city" id="city" class="form-input" type="text" placeholder="Cidade" disabled>
                     </div>
-                    <div>
-                        <button type="submit ">Salvar</button>
-                        <button>Limpar</button>
+                    <div class="btn-container">
+                        <button name="btnSave" class="btn btn-left" type="submit ">Salvar</button>
+                        <button name="btnClear" class="btn btn-right">Limpar</button>
                     </div>
                 </form>
             </div>
 
         </section>
-        <section id="list-section ">
-            <div>
+        <section id="list-section" class="list-container">
+            <div class="card-list-item">
                 <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 720</p>
-                <p>41100-333</p>
+                <p class="address-line">Rua dos Jardins, 720</p>
+                <p class="address-cep">41100-333</p>
             </div>
-            <div>
+            <div class="card-list-item">
                 <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 720</p>
-                <p>41100-333</p>
+                <p class="address-line">Rua dos Jardins, 720</p>
+                <p class="address-cep">41100-333</p>
             </div>
         </section>
     </main>
+
+    <script type="module" src="js/dsviacep.js"></script>
 </body>
 
 </html>
